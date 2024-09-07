@@ -349,8 +349,9 @@ def get_consultas():
             t.nome AS terapeuta, 
             te.nome AS terapia, 
             c.data_consulta, 
-            c.observacoes,
-                c.sala
+            c.observacoes, 
+    te.duracao_minutos,
+    c.sala
         FROM 
             consultas c
         JOIN 
@@ -368,15 +369,17 @@ def get_consultas():
     consultas_list = []
     for consulta in consultas:
         consulta_dict = {
-            'id': consulta[0],
-            'paciente': consulta[1],
-            'terapeuta': consulta[2],
-            'terapia': consulta[3],
-            'data_consulta': consulta[4].strftime('%Y-%m-%d'),
-            'observacoes': consulta[5],
-            'sala': consulta[6]
+    'id': consulta[0],
+    'paciente': consulta[1],
+    'terapeuta': consulta[2],
+    'terapia': consulta[3],
+    'data_consulta': consulta[4].strftime('%Y-%m-%d'),
+    'hora_consulta': consulta[4].strftime('%H:%M:%S'),  # Adiciona a hora aqui
+    'observacoes': consulta[5],
+    'duracao_minutos': consulta[6],
+    'sala': consulta[7]
+}
 
-        }
         consultas_list.append(consulta_dict)
 
     return jsonify(consultas_list)
