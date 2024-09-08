@@ -1,5 +1,3 @@
-**Clinical Scheduling System Admin Dashboard**, including information about reports and the algorithm for patient, room, and specialist allocation:
-
 ---
 
 # Clinical Scheduling System - Admin Dashboard
