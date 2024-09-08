@@ -1,7 +1,10 @@
+Aqui está o README atualizado para o **Admin Dashboard do Sistema de Agendamento Clínico**, com as informações sobre relatórios e o algoritmo de alocação de pacientes, salas e especialistas:
+
+---
 
 # Agendamento Clínico - Admin Dashboard
 
-Bem-vindo ao Admin Dashboard do sistema de Agendamento Clínico, desenvolvido para facilitar a gestão de consultas, pacientes, terapeutas e terapias. Este sistema foi desenvolvido utilizando uma série de tecnologias modernas no frontend e backend para garantir uma experiência eficiente e intuitiva.
+Bem-vindo ao Admin Dashboard do sistema de Agendamento Clínico, desenvolvido para facilitar a gestão de consultas, pacientes, terapeutas e terapias. Este sistema foi criado para otimizar o fluxo de trabalho em clínicas e consultórios, utilizando uma série de tecnologias modernas no frontend e backend para garantir uma experiência eficiente e intuitiva.
 
 ## Desenvolvedor
 
@@ -33,7 +36,9 @@ Este projeto foi desenvolvido por **Moacir Fernandes**, Desenvolvedor Pleno.
    - Defina a duração de cada terapia e adicione uma descrição.
 
 ### 6. **Relatórios**
-   - Geração de relatórios diários, semanais e mensais.
+   - Geração de relatórios diários, semanais e mensais para análise do desempenho da clínica.
+   - Relatório geral para visualizar todas as atividades do sistema, incluindo consultas, pacientes, salas e terapeutas.
+   - Relatório de **Alocação**, que utiliza um algoritmo desenvolvido para o cruzamento de dados de pacientes, salas e especialistas (terapeutas), otimizando o uso dos recursos de forma eficiente.
    - Exporte relatórios em PDF para visualização e análise.
 
 ---
@@ -48,7 +53,7 @@ O backend foi desenvolvido utilizando o **Flask**, um framework minimalista de P
 - **psycopg2**: Biblioteca que faz a conexão entre Flask e PostgreSQL.
 - **Flask-CORS**: Permite o controle de acessos cross-origin, facilitando a comunicação entre o frontend e o backend.
 - **JWT (JSON Web Token)**: Utilizado para autenticação e autorização de usuários no sistema.
-  
+
 ### **Frontend** - React.js
 O frontend foi desenvolvido utilizando **React.js**, proporcionando uma experiência de usuário dinâmica e interativa.
 
@@ -57,7 +62,7 @@ O frontend foi desenvolvido utilizando **React.js**, proporcionando uma experiê
 - **react-pdf/renderer**: Biblioteca para gerar PDFs no frontend, utilizada na geração de relatórios.
 - **recharts**: Biblioteca de gráficos utilizada para criar visualizações gráficas dos dados no dashboard.
 - **Tailwind CSS / Custom CSS**: Utilizadas para estilização e design da interface de usuário.
-  
+
 ---
 
 ## Passo a Passo de Instalação
@@ -121,62 +126,6 @@ O frontend foi desenvolvido utilizando **React.js**, proporcionando uma experiê
    npm start
    ```
 
-### 5. **Bibliotecas do Backend**
-   - **Flask**: 
-     ```bash
-     pip install Flask
-     ```
-   - **psycopg2**:
-     ```bash
-     pip install psycopg2
-     ```
-   - **Flask-CORS**:
-     ```bash
-     pip install flask-cors
-     ```
-   - **Flask-JWT-Extended**:
-     ```bash
-     pip install Flask-JWT-Extended
-     ```
-
-### 6. **Bibliotecas do Frontend**
-   - **React**:
-     ```bash
-     npx create-react-app frontend
-     ```
-   - **react-icons**:
-     ```bash
-     npm install react-icons
-     ```
-   - **react-pdf/renderer**:
-     ```bash
-     npm install @react-pdf/renderer
-     ```
-   - **recharts**:
-     ```bash
-     npm install recharts
-     ```
-   - **axios** (para chamadas API):
-     ```bash
-     npm install axios
-     ```
-
----
-
-## Estrutura de Pastas
-
-```bash
-agendamento-clinico/
-├── backend/                # Código do servidor Flask
-│   ├── app.py              # Arquivo principal do servidor
-│   ├── requirements.txt    # Dependências do backend
-├── frontend/               # Código do cliente React
-│   ├── src/                # Código-fonte do React
-│   ├── public/             # Arquivos estáticos
-│   ├── package.json        # Dependências do frontend
-└── README.md               # Instruções do projeto
-```
-
 ---
 
 ## Uso
@@ -188,7 +137,7 @@ agendamento-clinico/
    - **Cadastro de Paciente**: Para gerenciar pacientes.
    - **Cadastro de Terapeuta**: Para gerenciar terapeutas.
    - **Cadastro de Terapias**: Para gerenciar e adicionar novas terapias.
-   - **Relatórios**: Para visualizar relatórios de desempenho.
+   - **Relatórios**: Para visualizar relatórios de desempenho, incluindo o Relatório de Alocação.
 
 ---
 
@@ -201,3 +150,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request 
 ## Licença
 
 Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+
+---
+
+Essa versão inclui o relatório de alocação e menciona o algoritmo desenvolvido para o cruzamento de pacientes, salas e terapeutas.
