@@ -1,3 +1,164 @@
+Here is the translated README for the **Clinical Scheduling System Admin Dashboard**, including information about reports and the algorithm for patient, room, and specialist allocation:
+
+---
+
+# Clinical Scheduling System - Admin Dashboard
+
+Welcome to the Admin Dashboard of the Clinical Scheduling System, designed to streamline the management of appointments, patients, therapists, and therapies. This system was created to optimize workflow in clinics and practices, utilizing modern technologies on both the frontend and backend to ensure an efficient and intuitive experience.
+
+## Developer
+
+This project was developed by **Moacir Fernandes**, a Mid-Level Developer.
+
+## Key Features
+
+### 1. **Agenda**
+   - View and manage the appointment schedule.
+   - Filter appointments by patient, therapist, therapy, and date.
+   - Display details such as time, duration, and consultation notes.
+
+### 2. **Appointment Registration**
+   - Register new appointments for patients.
+   - Select the patient, therapist, and therapy during registration.
+   - Assign a date, time, and room for each appointment.
+
+### 3. **Patient Registration**
+   - Manage patient registrations.
+   - Include details such as name, date of birth, address, phone number, and email.
+   - Link patients to specific therapists and therapies.
+
+### 4. **Therapist Registration**
+   - Register and manage therapists providing services on the platform.
+   - Include details such as name, specialty, phone number, and email.
+
+### 5. **Therapy Registration**
+   - Manage and add new therapies offered in the system.
+   - Set the duration of each therapy and add a description.
+
+### 6. **Reports**
+   - Generate daily, weekly, and monthly reports for clinic performance analysis.
+   - Comprehensive report to view all system activities, including appointments, patients, rooms, and therapists.
+   - **Allocation Report**, which uses an algorithm to cross-reference patient, room, and therapist data, optimizing resource usage efficiently.
+   - Export reports in PDF format for review and analysis.
+
+---
+
+## Technologies Used
+
+### **Backend** - Python Flask
+The backend was developed using **Flask**, a minimalistic Python framework, along with other technologies to ensure an efficient RESTful API.
+
+- **Flask**: Web framework used to create the API.
+- **PostgreSQL**: Relational database used to store information about patients, therapists, appointments, and therapies.
+- **psycopg2**: Library used to connect Flask and PostgreSQL.
+- **Flask-CORS**: Allows cross-origin access control, facilitating communication between frontend and backend.
+- **JWT (JSON Web Token)**: Used for user authentication and authorization.
+
+### **Frontend** - React.js
+The frontend was developed using **React.js**, providing a dynamic and interactive user experience.
+
+- **React**: JavaScript library used for building user interfaces.
+- **react-icons**: Icon library used for icons like filters and downloads.
+- **react-pdf/renderer**: Library used to generate PDFs on the frontend, utilized in report generation.
+- **recharts**: Chart library used to create graphical data visualizations on the dashboard.
+- **Tailwind CSS / Custom CSS**: Used for styling and designing the user interface.
+
+---
+
+## Installation Guide
+
+### 1. **Requirements**
+   - **Python** (>=3.8)
+   - **Node.js** (>=14.x.x)
+   - **PostgreSQL** (>=12.x.x)
+   - **Git**
+
+### 2. **Cloning the Repository**
+   ```bash
+   git clone https://github.com/your-repository/clinical-scheduling.git
+   cd clinical-scheduling
+   ```
+
+### 3. **Backend Installation (Flask)**
+
+1. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. Install backend dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up the PostgreSQL database and configure it in the `app.py` file:
+   ```python
+   # app.py
+   conn = psycopg2.connect(
+       dbname="agendaRecriare",
+       user="postgres",
+       password="your-password",
+       host="localhost",
+       port="5432"
+   )
+   ```
+
+4. Start the Flask server:
+   ```bash
+   flask run
+   ```
+
+### 4. **Frontend Installation (React)**
+
+1. Navigate to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+
+2. Install the React project dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
+## Usage
+
+1. Access the Admin Dashboard via the browser.
+2. Navigate through the available features:
+   - **Agenda**: To view and manage appointments.
+   - **Appointment Registration**: To add new appointments.
+   - **Patient Registration**: To manage patients.
+   - **Therapist Registration**: To manage therapists.
+   - **Therapy Registration**: To manage and add new therapies.
+   - **Reports**: To view performance reports, including the Allocation Report.
+
+---
+
+## Contributions
+
+Contributions are welcome! Feel free to open a Pull Request or report issues on the Issues tab.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+This version includes the allocation report and mentions the algorithm developed for patient, room, and therapist matching.
+
+---
+
+
+
 Aqui está o README atualizado para o **Admin Dashboard do Sistema de Agendamento Clínico**, com as informações sobre relatórios e o algoritmo de alocação de pacientes, salas e especialistas:
 
 ---
