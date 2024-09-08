@@ -1,4 +1,4 @@
-Here is the translated README for the **Clinical Scheduling System Admin Dashboard**, including information about reports and the algorithm for patient, room, and specialist allocation:
+**Clinical Scheduling System Admin Dashboard**, including information about reports and the algorithm for patient, room, and specialist allocation:
 
 ---
 
@@ -8,7 +8,7 @@ Welcome to the Admin Dashboard of the Clinical Scheduling System, designed to st
 
 ## Developer
 
-This project was developed by **Moacir Fernandes**, a Mid-Level Developer.
+This project was developed by **Moacir Fernandes**.
 
 ## Key Features
 
